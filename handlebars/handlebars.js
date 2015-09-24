@@ -1,5 +1,7 @@
 var handlebars = require('handlebars');
 var layouts = require('handlebars-layouts');
+var http = require('http');
+var mongoose = require('mongoose');
 var User = require(__dirname + '/../models/user');
 
 // Register helpers
