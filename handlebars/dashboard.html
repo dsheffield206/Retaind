@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  {{#block "head"}}
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+  <link rel="stylesheet" type="text/css" href="dashboard.css">
+  <title>{{title}}</title>
+  {{/block}}
+</head>
+<body>
+  {{#block "header"}}
+  <h1>{{title}}</h1>
+  {{/block}}
+  <main>
+    {{#block "body"}}
+    {{/block}}
+  </main>
+    {{#block "foot"}}
+    <script src="dashboard.js"></script>
+    {{/block}}
+</body>
+</html>

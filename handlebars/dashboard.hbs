@@ -1,0 +1,24 @@
+{{#extend "layout"}}
+    {{#content "head" mode="append"}}
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link rel="stylesheet" type="text/css" href="dashboard.css">
+      <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+    {{/content}}
+
+    {{#content "body"}}
+      <h2>Hello Again! Please find your Dashboard</h2>
+
+      <ul>
+          {{#items}}
+              <li>{{.}}</li>
+          {{/items}}
+      </ul>
+    {{/content}}
+
+
+    {{#content "foot"}}
+      <script src="handlebars.js"></script>
+      <script src="dashboard.js"></script>
+    {{/content}}
+{{/extend}}
